@@ -132,6 +132,7 @@ export default function Dashboard() {
               amount="1,25,000"
               dueDate="2024-06-15"
               status="Update Status"
+              
             />
             <InvoiceCard
               client="Client Name"

@@ -23,7 +23,7 @@ const data = [
 export default function IncomeChart() {
   return (
     <div className="w-full">
-      <h2 className="text-lg font-semibold text-gray-700">Income Trend</h2>
+      <h2 className="text-lg font-semibold text-gray-500">Income Trend</h2>
       <p className="text-sm text-gray-500 mb-6">
         Your monthly income and growth for the last 6 months.
       </p>
