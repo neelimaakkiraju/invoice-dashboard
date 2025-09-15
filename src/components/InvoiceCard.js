@@ -19,7 +19,7 @@ export default function InvoiceCard({ client, amount, dueDate, status }) {
   const showPencil = status === "Draft";
 
   return (
-    <div className="bg-white rounded-2xl p-4 flex items-center justify-between hover:bg-gray-50 transition-colors border border-[2px] border-gray-100">
+    <div className="bg-white rounded-2xl py-3 px-3 flex items-center justify-between hover:bg-gray-50 transition-colors border border-[2px] border-gray-100">
       <div>
         <h3 className="text-[#6B7280] text-sm font-semibold">{client}</h3>
         <p className="text-gray-400 text-xs">
