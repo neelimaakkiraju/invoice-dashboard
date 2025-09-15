@@ -46,7 +46,7 @@ export default function Dashboard() {
           Or Upload an existing invoice and set payment reminder
         </p>
         {/* Time Period */}
-        <div className="bg-white rounded-2xl py-4 px-3 border border-[2px]">
+        <div className="bg-white rounded-2xl py-4 px-3 border border-[2px] border-gray-100">
           <div className="flex items-center justify-between w-full mb-4">
             <h2 className="text-sm font-semibold text-gray-400">Time Period</h2>
             <div className="text-gray-400 text-xs text-center sm:text-left">
@@ -54,7 +54,7 @@ export default function Dashboard() {
             </div>
           </div>
           <div className="flex flex-wrap gap-3 text-gray-400">
-            <button className="flex-1 min-w-[100px] px-2 py-1 rounded-full border border-[1px] hover:bg-purple-50 hover:border-purple-200 transition-colors">
+            <button className="flex-1 min-w-[100px] px-2 py-1 rounded-full border border-[1px]  hover:bg-purple-50 hover:border-purple-200 transition-colors">
               1 Month
             </button>
             <button className="flex-1 min-w-[100px] px-2 py-1  rounded-full bg-gradient-to-r from-purple-100 to-pink-50 border border-[1px] text-purple-600">
@@ -87,25 +87,25 @@ export default function Dashboard() {
           <StatsCard
             title="Total Earnings"
             amount="$1,25,000"
-            className="border border-[2px]"
+            className="border border-[2px] border-gray-100"
           />
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-2 gap-4 font-semibold">
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-4 font-semibold border-gray-100">
           <StatsCard
             title="Payment Awaited"
             amount="$25,000"
-            className="border border-[2px]"
+            className="border border-[2px] border-gray-100"
           />
           <StatsCard
             title="Payment Overdue"
             amount="$25,000"
-            className="border border-[2px]"
+            className="border border-[2px] border-gray-100"
           />
         </div>
 
         {/* Chart */}
-        <div className="bg-white rounded-2xl p-3 border border-[2px]">
+        <div className="bg-white rounded-2xl p-3 border border-[2px] border-gray-100">
           <IncomeChart />
         </div>
 
