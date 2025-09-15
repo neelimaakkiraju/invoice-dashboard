@@ -1,11 +1,11 @@
 import React from "react";
-import { FiArrowLeft } from "react-icons/fi";
+import { GoChevronLeft } from "react-icons/go";
 
 export default function Header() {
   return (
-    <div className="flex items-center justify-between p-4 border-b bg-white shadow-sm">
+    <div className="flex items-center justify-between p-4 border-b bg-pink-100 h-32">
       <div className="flex items-center gap-2">
-        <FiArrowLeft className="text-xl cursor-pointer" />
+        <GoChevronLeft  className="text-3xl font-semibold cursor-pointer" />
         <h1 className="text-lg font-semibold">Back</h1>
         
       </div>

@@ -1,4 +1,7 @@
 import React from "react";
+import { CgBell } from "react-icons/cg";
+import { LuPencil } from "react-icons/lu";
+
 
 export default function InvoiceCard({ client, amount, dueDate, status }) {
   const statusStyles = {
@@ -18,8 +21,8 @@ export default function InvoiceCard({ client, amount, dueDate, status }) {
   return (
     <div className="bg-white rounded-2xl shadow-sm p-4 flex items-center justify-between hover:bg-gray-50 transition-colors border border-[2px]">
       <div>
-        <h3 className="text-[#6B7280] text-lg font-semibold">{client}</h3>
-        <p className="text-gray-400">
+        <h3 className="text-[#6B7280] text-sm font-semibold">{client}</h3>
+        <p className="text-gray-400 text-xs">
           ₹{amount}, Due: {dueDate}
         </p>
       </div>
@@ -30,24 +33,10 @@ export default function InvoiceCard({ client, amount, dueDate, status }) {
           {status}
         </span>
         {showBell && (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 text-gray-400"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
-          </svg>
+          <CgBell className="text-gray-400 h-5 w-5" />
         )}
         {showPencil && (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 text-gray-400"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
-          </svg>
+          <LuPencil  className="text-gray-400"/>
         )}
       </div>
     </div>

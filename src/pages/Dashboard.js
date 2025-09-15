@@ -3,15 +3,19 @@ import Header from "../components/Header";
 import StatsCard from "../components/StatsCard";
 import IncomeChart from "../components/IncomeChart";
 import InvoiceCard from "../components/InvoiceCard";
+import { GoTriangleDown } from "react-icons/go";
+import { FaCrown } from "react-icons/fa";
+import { CgAdd } from "react-icons/cg";
 
 export default function Dashboard() {
   return (
-    <div className="bg-gray-50 min-h-screen">
+    
+    <div>
+      
       <Header />
-
-      <div className="p-4 space-y-6">
+      <div className="p-4 space-y-6 mb-20 bg-white -mt-7 rounded-t-[40px]">
         {/* Create Invoice */}
-        <div className="bg-[#F2F2F2] rounded-3xl p-8 text-center relative overflow-hidden">
+        <div className="bg-[#F2F2F2] rounded-3xl p-8 text-center relative overflow-hidden mt-3">
           <div className="relative z-10">
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 mb-4">
               <svg
@@ -38,29 +42,29 @@ export default function Dashboard() {
           <div className="absolute top-0 right-0 w-32 h-32 rounded-full -mr-16 -mt-16 opacity-50"></div>
           <div className="absolute bottom-0 left-0 w-24 h-24 rounded-full -ml-12 -mb-12 opacity-50"></div>
         </div>
-        <p className="text-sm text-purple-500 mt-4 hover:text-pink-600 cursor-pointer transition-colors text-center">
+        <p className="text-xs text-purple-600 mt-4 hover:text-pink-600 cursor-pointer transition-colors text-center">
           Or Upload an existing invoice and set payment reminder
         </p>
         {/* Time Period */}
-        <div className="bg-white rounded-2xl shadow-sm p-6 border border-[2px]">
+        <div className="bg-white rounded-2xl py-4 px-3 border border-[2px]">
           <div className="flex items-center justify-between w-full mb-4">
-            <h2 className="text-lg font-semibold text-gray-400">Time Period</h2>
-            <div className="text-gray-400 text-md text-center sm:text-left">
+            <h2 className="text-sm font-semibold text-gray-400">Time Period</h2>
+            <div className="text-gray-400 text-xs text-center sm:text-left">
               dd:mm:yyyy - dd:mm:yyyy
             </div>
           </div>
           <div className="flex flex-wrap gap-3 text-gray-400">
-            <button className="flex-1 min-w-[100px] px-4 py-2 rounded-xl border border-[1px] hover:bg-purple-50 hover:border-purple-200 transition-colors">
+            <button className="flex-1 min-w-[100px] px-2 py-1 rounded-full border border-[1px] hover:bg-purple-50 hover:border-purple-200 transition-colors">
               1 Month
             </button>
-            <button className="flex-1 min-w-[100px] px-4 py-2 rounded-xl bg-gradient-to-r from-purple-100 to-pink-50 border border-[1px] text-purple-600">
+            <button className="flex-1 min-w-[100px] px-2 py-1  rounded-full bg-gradient-to-r from-purple-100 to-pink-50 border border-[1px] text-purple-600">
               3 Months
             </button>
-            <button className="flex-1 min-w-[100px] px-4 py-2 rounded-xl border border-[1px] hover:bg-purple-50 hover:border-purple-200 transition-colors flex items-center justify-center gap-2">
+            <button className="flex-1 min-w-[100px] px-2 py-1 rounded-full border border-[1px] hover:bg-purple-50 hover:border-purple-200 transition-colors flex items-center justify-center gap-2">
               1 Year
-              <span className="text-pink-500">👑</span>
+              <span className="text-purple-600 h-5 w-7"><FaCrown /></span>
             </button>
-            <button className="flex-1 min-w-[100px] px-4 py-2 rounded-xl border border-[1px] hover:bg-purple-50 hover:border-purple-200 transition-colors flex items-center justify-center gap-2">
+            <button className="flex-1 min-w-[100px] px-2 py-1  rounded-full border border-[1px] hover:bg-purple-50 hover:border-purple-200 transition-colors flex items-center justify-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5 text-purple-500"
@@ -79,15 +83,15 @@ export default function Dashboard() {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-4 font-semibold text-xl">
           <StatsCard
             title="Total Earnings"
-            amount="$125,000"
+            amount="$1,25,000"
             className="border border-[2px]"
           />
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-4 font-semibold">
           <StatsCard
             title="Payment Awaited"
             amount="$25,000"
@@ -101,29 +105,18 @@ export default function Dashboard() {
         </div>
 
         {/* Chart */}
-        <div className="bg-white rounded-2xl shadow-sm p-6 border border-[2px]">
+        <div className="bg-white rounded-2xl p-3 border border-[2px]">
           <IncomeChart />
         </div>
 
         {/* Invoices */}
-        <div className="bg-white rounded-2xl shadow-sm p-6">
-          <div className="flex items-center justify-between mb-6">
-            <h2 className="text-xl font-semibold text-gray-400">
+       
+          <div className="flex items-center justify-between">
+            <h2 className="text-md font-semibold text-gray-400">
               Your Invoices
             </h2>
             <button className="p-2 hover:bg-gray-100 rounded-lg">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-gray-400"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                  clipRule="evenodd"
-                />
-              </svg>
+              <GoTriangleDown />
             </button>
           </div>
           <div className="space-y-3">
@@ -131,9 +124,18 @@ export default function Dashboard() {
               client="Client Name"
               amount="1,25,000"
               dueDate="2024-06-15"
-              status="Update Status"
+              status={
+    <button
+      className="flex items-center rounded-[24px] px-4 py-2 -mr-4  bg-[#8134AF] text-white text-xs"
+    >
+      Update Status
+      <GoTriangleDown className="w-4 h-4 text-white" />
+    </button>
+  }
               
             />
+        
+            
             <InvoiceCard
               client="Client Name"
               amount="1,25,000"
@@ -197,6 +199,6 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
-    </div>
+   
   );
 }
