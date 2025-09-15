@@ -15,9 +15,9 @@ export default function Dashboard() {
       <Header />
       <div className="p-4 space-y-6 mb-20 bg-white -mt-7 rounded-t-[40px]">
         {/* Create Invoice */}
-        <div className="bg-[#F2F2F2] rounded-3xl p-8 text-center relative overflow-hidden mt-3">
+        <div className="bg-[#F2F2F2] rounded-3xl p-5 text-center relative overflow-hidden mt-3">
           <div className="relative z-10">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 mb-4">
+            <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-8 w-8 text-white"
@@ -31,10 +31,10 @@ export default function Dashboard() {
                 />
               </svg>
             </div>
-            <h2 className="text-3xl font-semibold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2">
+            <h2 className="text-2xl font-semibold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2">
               Create New Invoice
             </h2>
-            <p className="text-[#999999]">
+            <p className="text-[#999999] text-xs">
               Start by creating and sending new invoice
             </p>
           </div>
