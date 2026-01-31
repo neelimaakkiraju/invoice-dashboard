@@ -1,70 +1,152 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Project Structure
 
-In the project directory, you can run:
+```
+invoice-dashboard/
+├── package.json              # Project dependencies & scripts
+├── tailwind.config.js        # Tailwind CSS configuration
+├── public/                   # Static assets (HTML, manifest, robots)
+│   ├── index.html
+│   ├── manifest.json
+│   └── robots.txt
+└── src/                      # Source code
+    ├── App.js                # Main app component
+    ├── App.css               # App styles
+    ├── index.js              # Entry point
+    ├── reportWebVitals.js
+    ├── setupTests.js
+    ├── components/           # Reusable UI components
+    │   ├── Footer.js
+    │   ├── Header.js
+    │   ├── IncomeChart.js
+    │   ├── InvoiceCard.js
+    │   ├── Sidebar.js
+    │   └── StatsCard.js
+    └── pages/                # App pages
+        └── Dashboard.js
+```
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+| Feature         | Description                                                                                   |
+|----------------|-----------------------------------------------------------------------------------------------|
+| **AI-Powered** | Intelligent invoice analytics and dashboard using modern AI/ML techniques                     |
+| **Demo Mode**  | Works without API key — shows sample results with clear "Demo Mode" indicators                |
+| **Instant Results** | Get complete invoice stats and charts in seconds, not hours of manual work                |
+| **Goal-Focused** | Track revenue, overdue invoices, and more — adapts to your business needs                  |
+| **Budget Aware** | Specify budget goals and get insights that fit your targets                                |
+| **Time Conscious** | Quick stats for busy days, or deep dives when you have time                              |
+| **Context Chips** | One-click filters for paid, unpaid, overdue, and more                                    |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Layer       | Technology                                                      |
+|-------------|-----------------------------------------------------------------|
+| Framework   | React (Create React App)                                        |
+| Styling     | Tailwind CSS                                                    |
+| Charts      | Chart.js (or similar, depending on your implementation)         |
+| Language    | JavaScript                                                      |
+| State       | React Context API / Redux (if used)                             |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# E-Commerce Frontend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p><b>Modern React + Tailwind CSS e-commerce frontend</b> — fast, responsive, and easy to extend.</p>
 
-### `npm run eject`
+<p>
+<img src="https://img.shields.io/badge/React-18.x-61dafb?logo=react" />
+<img src="https://img.shields.io/badge/TailwindCSS-3.x-38bdf8?logo=tailwindcss" />
+<img src="https://img.shields.io/badge/Redux-Toolkit-764abc?logo=redux" />
+<img src="https://img.shields.io/badge/License-MIT-green" />
+</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Feature            | Description                                               |
+| ------------------ | --------------------------------------------------------- |
+| 🛒 Product Listing | Browse all products on the Home page                      |
+| 🔍 Product Detail  | View details, images, and price for each product          |
+| 🛍️ Cart            | Add/remove products, view cart summary, update quantities |
+| 💳 Checkout        | Simple checkout page for order review                     |
+| 💾 Local Cache     | Fast product caching with custom React hook               |
+| ⏳ Loading States  | Loading indicator for async actions                       |
+| 📱 Responsive UI   | Mobile-first, built with Tailwind CSS                     |
+| ⚡ Fast & Modern   | Optimized for performance and developer experience        |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Demo Mode
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+No backend? No problem!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This app can be run in demo mode with mock product data:
 
-### Code Splitting
+- Instantly loads sample products for testing and development
+- No API keys or backend required
+- No errors, just a smooth experience
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+| Layer     | Technology                     |
+| --------- | ------------------------------ |
+| Framework | React 18, Create React App     |
+| Styling   | Tailwind CSS 3                 |
+| State     | Redux Toolkit                  |
+| API       | Custom fetch (productsApis.js) |
+| Testing   | Jest, React Testing Library    |
+| Tooling   | ESLint, Prettier               |
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Project Structure
 
-### Advanced Configuration
+frontend-e-commerce/
+├── package.json # Project dependencies & scripts
+├── tailwind.config.js # Tailwind CSS configuration
+├── public/ # Static assets (HTML, manifest, robots)
+│ ├── index.html
+│ ├── manifest.json
+│ └── robots.txt
+├── src/ # Source code
+│ ├── App.js # Main app component
+│ ├── App.css # App styles
+│ ├── index.js # Entry point
+│ ├── api/
+│ │ └── productsApis.js # Product API calls
+│ ├── components/ # Reusable UI components
+│ │ ├── Header.jsx # App header
+│ │ ├── Loading.jsx # Loading spinner
+│ │ └── ProductCard.jsx # Product display card
+│ ├── hooks/
+│ │ └── useLocalCache.js # Local cache hook
+│ ├── pages/ # App pages
+│ │ ├── Cart.jsx # Cart page
+│ │ ├── Checkout.jsx # Checkout page
+│ │ ├── Home.jsx # Home/product list
+│ │ └── Product.jsx # Product detail
+│ └── store/ # Redux store & slices
+│ ├── cartSlice.js # Cart state
+│ ├── productSlice.js # Product state
+│ └── index.js # Store setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## Scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+| Command       | Description              |
+| ------------- | ------------------------ |
+| npm start     | Start development server |
+| npm test      | Run tests                |
+| npm run build | Build for production     |
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
