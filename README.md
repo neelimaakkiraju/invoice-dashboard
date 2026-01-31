@@ -1,29 +1,4 @@
-## Project Structure
-
-```
-invoice-dashboard/
-├── package.json              # Project dependencies & scripts
-├── tailwind.config.js        # Tailwind CSS configuration
-├── public/                   # Static assets (HTML, manifest, robots)
-│   ├── index.html
-│   ├── manifest.json
-│   └── robots.txt
-└── src/                      # Source code
-    ├── App.js                # Main app component
-    ├── App.css               # App styles
-    ├── index.js              # Entry point
-    ├── reportWebVitals.js
-    ├── setupTests.js
-    ├── components/           # Reusable UI components
-    │   ├── Footer.js
-    │   ├── Header.js
-    │   ├── IncomeChart.js
-    │   ├── InvoiceCard.js
-    │   ├── Sidebar.js
-    │   └── StatsCard.js
-    └── pages/                # App pages
-        └── Dashboard.js
-```
+# Invoice Dashboard
 
 ## Features
 
