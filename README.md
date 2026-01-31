@@ -1,5 +1,3 @@
-
-
 ## Project Structure
 
 ```
@@ -27,31 +25,29 @@ invoice-dashboard/
         └── Dashboard.js
 ```
 
-
-
 ## Features
 
-| Feature         | Description                                                                                   |
-|----------------|-----------------------------------------------------------------------------------------------|
-| **AI-Powered** | Intelligent invoice analytics and dashboard using modern AI/ML techniques                     |
-| **Demo Mode**  | Works without API key — shows sample results with clear "Demo Mode" indicators                |
-| **Instant Results** | Get complete invoice stats and charts in seconds, not hours of manual work                |
-| **Goal-Focused** | Track revenue, overdue invoices, and more — adapts to your business needs                  |
-| **Budget Aware** | Specify budget goals and get insights that fit your targets                                |
-| **Time Conscious** | Quick stats for busy days, or deep dives when you have time                              |
-| **Context Chips** | One-click filters for paid, unpaid, overdue, and more                                    |
+| Feature             | Description                                                                    |
+| ------------------- | ------------------------------------------------------------------------------ |
+| **AI-Powered**      | Intelligent invoice analytics and dashboard using modern AI/ML techniques      |
+| **Demo Mode**       | Works without API key — shows sample results with clear "Demo Mode" indicators |
+| **Instant Results** | Get complete invoice stats and charts in seconds, not hours of manual work     |
+| **Goal-Focused**    | Track revenue, overdue invoices, and more — adapts to your business needs      |
+| **Budget Aware**    | Specify budget goals and get insights that fit your targets                    |
+| **Time Conscious**  | Quick stats for busy days, or deep dives when you have time                    |
+| **Context Chips**   | One-click filters for paid, unpaid, overdue, and more                          |
 
 ---
 
 ## Tech Stack
 
-| Layer       | Technology                                                      |
-|-------------|-----------------------------------------------------------------|
-| Framework   | React (Create React App)                                        |
-| Styling     | Tailwind CSS                                                    |
-| Charts      | Chart.js (or similar, depending on your implementation)         |
-| Language    | JavaScript                                                      |
-| State       | React Context API / Redux (if used)                             |
+| Layer     | Technology                                              |
+| --------- | ------------------------------------------------------- |
+| Framework | React (Create React App)                                |
+| Styling   | Tailwind CSS                                            |
+| Charts    | Chart.js (or similar, depending on your implementation) |
+| Language  | JavaScript                                              |
+| State     | React Context API / Redux (if used)                     |
 
 # E-Commerce Frontend
 
